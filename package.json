@@ -1,0 +1,19 @@
+{
+  "name": "npm-hello-artifactory",
+  "version": "1.0.0",
+  "description": "A hello-world npm package for artifactory publishing demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robychan/npm-hello-artifactory.git"
+  },
+  "author": "Roby George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robychan/npm-hello-artifactory/issues"
+  },
+  "homepage": "https://github.com/robychan/npm-hello-artifactory#readme"
+}

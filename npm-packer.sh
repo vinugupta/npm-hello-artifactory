@@ -23,7 +23,12 @@ then
 	if [ -f package.json ]
 	then
 		name=$(grep name package.json| cut -f2 -d ":" | tr -d "\", ")
-		rm -rf $name.tgz
+		if [ -f $name.tgz ]
+		then
+			rm rf $name.tgz
+		else
+			echo "$name.tgz doesn't exists in the directory!"
+		fi
 	else
 		echo "package.json doesn't exist in build source!"
 	fi

@@ -25,7 +25,7 @@ then
 		name=$(grep name package.json| cut -f2 -d ":" | tr -d "\", ")
 		if [ -f $name.tgz ]
 		then
-			rm rf $name.tgz
+			rm -rf $name.tgz
 		else
 			echo "$name.tgz doesn't exists in the directory!"
 		fi

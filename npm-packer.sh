@@ -22,7 +22,7 @@ elif [ "$1" == "--clean" -o "$1" == "-c" ]
 then
 	if [ -f package.json ]
 	then
-		name=grep name package.json| cut -f2 -d ":" | tr -d "\", "
+		name=$(grep name package.json| cut -f2 -d ":" | tr -d "\", ")
 		rm -rf $name.tgz
 	else
 		echo "package.json doesn't exist in build source!"

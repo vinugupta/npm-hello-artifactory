@@ -12,7 +12,7 @@ if [ "$#" -eq "0" -o "$1" == "--build" -o "$1" == "-b" ]
 then
 	if [ -f package.json ]  # Checking is package.json, which is essential for an npm package is present or not
 	then
-		name=$(grep name package.json| tr -d "\", " | cut -f2 -d ":")  #retreives name from package.json
+		name=$(grep name package.json| cut -f2 -d ":" | tr -d "\", ")  #retreives name from package.json
 		echo $name
 		#creates the tar file after creating relevant files
 		mkdir ../package
@@ -31,7 +31,7 @@ elif [ "$1" == "--clean" -o "$1" == "-c" ]
 then
 	if [ -f package.json ]
 	then
-		name=$(grep name package.json| tr -d "\", " | cut -f2 -d ":")  #retreives name from package.json
+		name=$(grep name package.json| cut -f2 -d ":" | tr -d "\", ")  #retreives name from package.json
 		if [ -f $name.tgz ]
 		then
 			rm -rf $name.tgz  #Attemps to delete the tar file that this script created, deleted it only if it hasn't been renmaed or moved

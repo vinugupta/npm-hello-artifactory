@@ -1,6 +1,6 @@
 {
   "name": "npm-hello-artifactory",
-  "version": "1.0.7",
+  "version": "1.0.4",
   "description": "A hello-world npm package for artifactory publishing demo",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 {
-  "name": "npm-hello-artifactory",
-  "version": "1.0.4",
+  "name": "npm-x-ray-artifactory",
+  "version": "1.0.0",
   "description": "A hello-world npm package for artifactory publishing demo",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/robychan/npm-hello-artifactory.git"
   },
-  "author": "Roby George",
+  "author": "vinay gupta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/robychan/npm-hello-artifactory/issues"
+    "url": "https://github.com/vinugupta/npm-hello-artifactory/issues"
   },
-  "homepage": "https://github.com/robychan/npm-hello-artifactory#readme"
+  "homepage": "https://github.com/vinugupta/npm-hello-artifactory#readme"
 }

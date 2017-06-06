@@ -12,9 +12,7 @@ http.createServer(function (req, res) {
 	const buf = new Buffer(10);
         res.end('buf.fill(0)');
         console.log('buffer: ' + buf.fill(0) );
-	const expand = require('brace-expansion');
-expand('{,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n}')
-
+	
 // use port 8888
 }).listen(8888);
 console.log('Server running on port 8888.');

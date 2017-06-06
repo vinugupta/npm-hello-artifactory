@@ -1,5 +1,5 @@
 {
-  "name": "npm-x-ray-artifactory",
+  "name": "npm-x-ray-artifactory_test",
   "version": "1.0.0",
   "description": "A hello-world npm package for artifactory publishing demo",
   "main": "index.js",

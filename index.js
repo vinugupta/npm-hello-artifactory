@@ -9,6 +9,9 @@ http.createServer(function (req, res) {
 
 	// print out Hello World
 	res.end('Hello World\n');
+	const buf = new Buffer(10);
+        res.end('buf.fill(0)');
+        console.log('buffer: ' + buf.fill(0) );
 
 // use port 8888
 }).listen(8888);
